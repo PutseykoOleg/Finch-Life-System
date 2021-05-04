@@ -9,5 +9,7 @@ If you are sure that this system is compatible with robots of another generation
 
 **API**
 
-If you would like to get a newer version of the Finch robot API, you can download it [here](https://www.birdbraintechnologies.com/portal/finch1/program/). It's important to choose the Java develop language!
+You don't need to download API for this project, because it has already been downloaded and located in the `/libs/` and `/src/com/birdbraintechnologies/` folders. 
+
+But if you would like to get a Finch robot API, you can download it [here](https://www.birdbraintechnologies.com/portal/finch1/program/).
 
