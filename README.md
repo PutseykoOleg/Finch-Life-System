@@ -23,10 +23,19 @@ But if you would like to get a Finch robot API, you can download it [here](https
 #### Signals
 
 The system has an abstract class `Signal`, object of which you cannot instantiate. Instead, you can create a new signal type by inheriting class `Signal`. 
-Each new signal type will have a Singleton pattern structure. Therefore, you will need to write a `getInstance` method to get an instance of the class:
+Each new signal type has to have a Singleton pattern structure. Therefore, you must make the constructor non-public and you will need to write a `getInstance` method to get an instance of the class:
 
 ```Java
 public static [new_class_name] getInstance(){
   return ([new_class_name]) Signal.getRootInstance(([new_class_name])_instance, new [new_class_name]()); 
 }
- ```
+```
+
+In order to describe the behavior of the robot (new signal), you need to override `action` method, in the body of which you should write all the logic of the behavior. It's important to remember that this method is already being called on a new thread!
+
+```Java
+protected synchronized void action(Finch targetFinch) {
+  /*behavior of the robot*/
+}
+```
+
