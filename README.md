@@ -1,24 +1,33 @@
 # Finch-Life-System
-Simulator of the life of a Finch 1.0 robot with the ability to control it
 
-## Initial setup
+Simulator of the life of a Finch 1.0 robot with the ability to control it.
 
-### Where can I get robot?
+ #### Contents:
+ - [Initial setup](#setup)
+   - [Where can I get a robot?](#where-can-i-get-a-robot)
+   - [Finch API](#api)
+ - [User development](#development)
+
+----------------
+
+## Initial setup :gear: <a id="setup"/>
+
+#### Where can I get a robot? <a id="where-can-i-get-a-robot"/>
 
 This project uses the Finch robot [version 1.0](https://store.birdbraintechnologies.com/collections/featured-items/products/finch-robot).
 If you are sure that this system is compatible with robots of another generation, you can purchase another version of the robot [here](https://store.birdbraintechnologies.com/).
 
-____
-### API
+#### Finch API <a id="api"/>
 
 You don't need to download API for this project, because it has already been downloaded and located in the `/libs/` and `/src/com/birdbraintechnologies/` folders. 
 
 But if you would like to get a Finch robot API, you can download it [here](https://www.birdbraintechnologies.com/portal/finch1/program/).
 
-____
-### User development
+---------------------------------
 
-**You have the ability to create new version of this system.**
+### User development <a id="development"/>
+
+You have the ability to create new version of this system.
 
 #### - Signals
 
