@@ -7,6 +7,10 @@ Simulator of the life of a Finch 1.0 robot with the ability to control it.
    - [Where can I get a robot?](#where-can-i-get-a-robot)
    - [Finch API](#api)
  - [User development](#development)
+   - [User data](#user-data)
+   - [Saving](#saving)
+   - [Moving](#moving)
+   - [Signals](#signals)
 
 ----------------
 
@@ -29,7 +33,17 @@ But if you would like to get a Finch robot API, you can download it [here](https
 
 You have the ability to create new version of this system.
 
-#### - Signals
+#### - User data <a id="user-data"/>
+
+The serializable class `UserData` is used to store information about local user accounts.
+
+User data is stored in a `/src/com/users/***/data.fud` files. 
+
+#### - Saving <a id="saving"/>
+
+#### - Moving <a id="moving"/>
+
+#### - Signals <a id="signals"/>
 
 The system has an abstract class `Signal`, object of which you cannot instantiate. Instead, you can create a new signal type by inheriting class `Signal`. 
 Each new signal type has to have a Singleton pattern structure. Therefore, you must make the constructor non-public and you will need to write a `getInstance` method to get an instance of the class:
